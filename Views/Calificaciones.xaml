@@ -34,7 +34,6 @@
                FontSize="15"
                HorizontalTextAlignment="Center"
                />
-        
         <Label Text="Nota Deberes" />
         <Entry x:Name="txtDeberesMomento1" Placeholder="Ingrese la nota de deberes momento 1" Keyboard="Numeric" />
 
@@ -67,3 +66,5 @@
 
     </VerticalStackLayout>
 </ContentPage>
+    
+    
