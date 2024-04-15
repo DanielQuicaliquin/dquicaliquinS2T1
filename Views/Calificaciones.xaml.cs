@@ -48,7 +48,8 @@ public partial class Calificaciones : ContentPage
             String estudiante = pkEstudiantes.Items[pkEstudiantes.SelectedIndex].ToString();
             String fecharegistro = FechaDatePicker.Date.ToString("dd/MM/yyyy");
 
-            DisplayAlert("Resultados", "Estudiante: " + estudiante + "\nFecha: " +fecharegistro+ "\nNota Parcial 1: "+ notaParcial1 + "\nNota Parcial 2: "+ notaParcial1 +
+            DisplayAlert("Resultados", "Estudiante: " + estudiante + "\nFecha: " +fecharegistro+ 
+                "\nNota Parcial 1: "+ notaParcial1 + "\nNota Parcial 2: "+ notaParcial1 +
                 "\nNota Final: "+ notaFinal + "\nEstado: "+ estado, "Aceptar");
         }
     }
