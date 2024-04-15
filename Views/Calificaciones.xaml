@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dquicaliquinS2T1.Views.Calificaciones"
+             Title="Calificaciones">
+    <VerticalStackLayout>
+
+        <Image
+            Source="uisrael.png"
+            HeightRequest="100"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+
+        <Label 
+            Text="Calificaciones "
+            TextColor="Blue"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            />
+        <Label Text="Estudiantes"/>
+
+        <Picker x:Name="pkEstudiantes" Title="Escoge un estudiante">
+            <Picker.Items>
+                <x:String>Daniel Quicaliquin</x:String>
+                <x:String>Evelyn Lopez</x:String>
+                <x:String>Michael Quicaliquin</x:String>
+                <x:String>Nayeli Lopez</x:String>
+                <x:String>Diego Chiluisa</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Momento 1"
+               TextColor="Red"
+               FontSize="15"
+               HorizontalTextAlignment="Center"
+               />
+        
+        <Label Text="Nota Deberes" />
+        <Entry x:Name="txtDeberesMomento1" Placeholder="Ingrese la nota de deberes momento 1" Keyboard="Numeric" />
+
+        <Label Text="Nota Examen" />
+        <Entry x:Name="txtExamenMomento1" Placeholder="Ingrese la nota del examen momento 1" Keyboard="Numeric" />
+
+        <Label Text="Momento 2"
+               TextColor="Red"
+               FontSize="15"
+               HorizontalTextAlignment="Center"
+               />
+        
+        <Label Text="Nota Deberes" />
+        <Entry x:Name="txtDeberesMomento2" Placeholder="Ingrese la nota de deberes momento 2" Keyboard="Numeric" />
+
+        <Label Text="Nota Examen" />
+        <Entry x:Name="txtExamenMomento2" Placeholder="Ingrese la nota del examen momento 2" Keyboard="Numeric" />
+
+        <Label Text="Fecha de Registro"
+               TextColor="Red"
+               FontSize="15"
+               HorizontalTextAlignment="Center"
+               />
+        
+        <Label Text="Fecha de calculo" />
+        <DatePicker x:Name="FechaDatePicker" />
+
+        <Button Text="Calcular" Clicked="CalcularNota_Clicked" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
