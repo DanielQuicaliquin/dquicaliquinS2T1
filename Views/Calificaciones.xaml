@@ -57,13 +57,9 @@
                FontSize="15"
                HorizontalTextAlignment="Center"
                />
-        
         <Label Text="Fecha de calculo" />
         <DatePicker x:Name="FechaDatePicker" />
-
         <Button Text="Calcular" Clicked="CalcularNota_Clicked" />
-
-
     </VerticalStackLayout>
 </ContentPage>
     
